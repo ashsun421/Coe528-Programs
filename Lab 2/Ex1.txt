@@ -1,0 +1,35 @@
+//Requires: Two integer arrays a[] and b[] are needed and cannot be null to run the program
+//Modifies: The two integer arrays a[] and b[] are modified
+//Effects: Program determines which number in a[] and b[] is the max number
+
+public static void substituteMax(int[] a, int[] b) {
+	int maxOfA = a[0];
+	int index = 0;
+	for (int i = 0; i < a.length; i++) {
+		if(a[i] > maxOfA) {
+			maxOfA = a[i];
+			index = i;
+		}
+	}
+	int maxOfB = b[0];
+	for (int i = 0; i < b.length; i++) {
+		if(b[i] > maxOfB) {
+			maxOfB = b[i];
+		}
+	}
+	a[index] = maxOfB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
